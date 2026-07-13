@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi Gupta | MERN Stack Developer & Data Science Enthusiast</title>
+    <meta name="description"
+        content="Personal portfolio of Sakshi Gupta, a MERN Stack Developer & Data Science Intern specializing in full-stack web applications and AI-driven solutions.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="dark-theme">
+    <!-- Custom Cursor -->
+    <div class="custom-cursor-dot" id="cursor-dot"></div>
+    <div class="custom-cursor-outline" id="cursor-outline"></div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>Sakshi Gupta<span class="logo-accent"> /&gt;</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="cta-button nav-cta">Get In Touch</a>
+                <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-bg-blobs">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+                <div class="blob blob-3"></div>
+            </div>
+
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge reveal-fade">
+                        <span class="badge-dot"></span>
+                        <span class="badge-text">Open for Full-time Roles</span>
+                    </div>
+                    <h1 class="hero-title reveal-fade">
+                        Hi, I'm <span class="text-gradient">Sakshi Gupta</span>
+                    </h1>
+                    <h2 class="hero-subtitle reveal-fade">
+                        I build <span class="typing-text" id="typing-text"></span><span class="typed-cursor">|</span>
+                    </h2>
+                    <p class="hero-description reveal-fade">
+                        A passionate MERN Stack Developer and Data Science enthusiast bridging full-stack engineering
+                        with intelligent data-driven models.
+                    </p>
+                    <div class="hero-ctas reveal-fade">
+                        <a href="#projects" class="cta-button primary-cta">View Projects</a>
+                        <a href="#contact" class="cta-button secondary-cta">Get Resume Info</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal-fade">
+                    <div class="glass-card coding-dashboard">
+                        <div class="card-header">
+                            <div class="window-controls">
+                                <span class="dot-red"></span>
+                                <span class="dot-yellow"></span>
+                                <span class="dot-green"></span>
+                            </div>
+                            <div class="window-title">sakshi.js</div>
+                            <div class="window-actions">
+                                <i data-lucide="copy" class="action-icon"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <pre><code class="language-js"><span class="code-keyword">const</span> developer = {
+  name: <span class="code-string">'Sakshi Gupta'</span>,
+  education: <span class="code-string">'BTech in Computer Science'</span>,
+  stack: [
+    <span class="code-string">'MongoDB'</span>, <span class="code-string">'Express.js'</span>, 
+    <span class="code-string">'React.js'</span>, <span class="code-string">'Node.js'</span>
+  ],
+  languages: [<span class="code-string">'JavaScript'</span>, <span class="code-string">'Python'</span>, <span class="code-string">'Java'</span>],
+  passion: <span class="code-string">'AI Recommendation & Campus Portals'</span>,
+  cgpa: <span class="code-number">8.1</span>,
+  readyToContribute: <span class="code-boolean">true</span>
+};
+
+<span class="code-keyword">function</span> <span class="code-function">solveProblem</span>(data, needs) {
+  <span class="code-keyword">return</span> <span class="code-keyword">new</span> <span class="code-class">Solution</span>(data)
+    .analyze()
+    .model()
+    .deploy();
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-down" aria-label="Scroll to About section">
+                <span class="scroll-mouse">
+                    <span class="scroll-wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header reveal-fade">
+                    <span class="subtitle">Get To Know Me</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text reveal-fade">
+                        <h3 class="about-lead">Designing interactive web products and intelligent algorithms.</h3>
+                        <p class="about-paragraph">
+                            I am a Computer Science student at IMSEC, Ghaziabad, passionate about crafting responsive
+                            MERN stack applications and conducting data exploration. Through my internships at OTUSONE
+                            (MERN Stack) and Q Academy (Data Science), I have honed practical experience building robust
+                            interfaces, data-cleaning pipelines, and integrating AI microservices.
+                        </p>
+                        <p class="about-paragraph">
+                            I focus on writing clean, reusable components, maintaining structured version control, and
+                            optimizing data pipelines to reduce application load times.
+                        </p>
+
+                        <div class="personal-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Location</span>
+                                <span class="detail-val">Ghaziabad, UP, India</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Email</span>
+                                <span class="detail-val"><a
+                                        href="mailto:guptasakshi9838@gmail.com">guptasakshi9838@gmail.com</a></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Phone</span>
+                                <span class="detail-val"><a href="tel:+918423777203">8423777203</a></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">LinkedIn</span>
+                                <span class="detail-val"><a href="https://linkedin.com/in/sakshi-gupta-0a5736273"
+                                        target="_blank">sakshi-gupta-0a5736273</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stats reveal-fade">
+                        <div class="stat-card">
+                            <span class="stat-num" data-val="8">0</span><span class="stat-plus">.1</span>
+                            <span class="stat-label">BTech CGPA (IMSEC)</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num" data-val="2">0</span><span class="stat-plus"></span>
+                            <span class="stat-label">Internships Completed</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num" data-val="5">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num" data-val="2">0</span><span class="stat-plus"></span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-header reveal-fade">
+                    <span class="subtitle">My Arsenal</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-categories reveal-fade">
+                    <button class="skills-tab-btn active" data-category="all">All</button>
+                    <button class="skills-tab-btn" data-category="frontend">Frontend</button>
+                    <button class="skills-tab-btn" data-category="backend">Backend & Database</button>
+                    <button class="skills-tab-btn" data-category="tools">Languages & Tools</button>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Frontend -->
+                    <div class="skill-card reveal-fade" data-skill-cat="frontend">
+                        <div class="skill-icon-wrapper fontend-theme">
+                            <i data-lucide="layout"></i>
+                        </div>
+                        <h3 class="skill-name">React.js</h3>
+                        <p class="skill-desc">Building responsive, reusable modular client-side UI components and
+                            handling states.</p>
+                        <div class="skill-progress-bar">
+                            <div class="progress-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card reveal-fade" data-skill-cat="frontend">
+                        <div class="skill-icon-wrapper fontend-theme">
+                            <i data-lucide="palette"></i>
+                        </div>
+                        <h3 class="skill-name">Tailwind CSS / HTML</h3>
+                        <p class="skill-desc">Styling responsive utilities and layouts with modern utility-first
+                            layouts.</p>
+                        <div class="skill-progress-bar">
+                            <div class="progress-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Backend & Database -->
+                    <div class="skill-card reveal-fade" data-skill-cat="backend">
+                        <div class="skill-icon-wrapper backend-theme">
+                            <i data-lucide="server"></i>
+                        </div>
+                        <h3 class="skill-name">Node.js / Express.js</h3>
+                        <p class="skill-desc">Writing REST API endpoints, handling router controls, JWT authentication,
+                            and middlewares.</p>
+                        <div class="skill-progress-bar">
+                            <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card reveal-fade" data-skill-cat="backend">
+                        <div class="skill-icon-wrapper backend-theme">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <h3 class="skill-name">MongoDB & PostgreSQL</h3>
+                        <p class="skill-desc">Configuring collection schemas, relational tables, and executing queries.
+                        </p>
+                        <div class="skill-progress-bar">
+                            <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Languages & Tools -->
+                    <div class="skill-card reveal-fade" data-skill-cat="tools">
+                        <div class="skill-icon-wrapper devops-theme">
+                            <i data-lucide="terminal"></i>
+                        </div>
+                        <h3 class="skill-name">Java, Python & JS</h3>
+                        <p class="skill-desc">Writing core OOP concepts, DSA architectures, and Python data science
+                            pipelines.</p>
+                        <div class="skill-progress-bar">
+                            <div class="progress-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card reveal-fade" data-skill-cat="tools">
+                        <div class="skill-icon-wrapper devops-theme">
+                            <i data-lucide="container"></i>
+                        </div>
+                        <h3 class="skill-name">Docker / Git / Vercel</h3>
+                        <p class="skill-desc">Containerizing environments, version control, and cloud deployments
+                            (Vercel, Render).</p>
+                        <div class="skill-progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section-header reveal-fade">
+                    <span class="subtitle">Showcase</span>
+                    <h2 class="section-title">Academic & AI Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card reveal-fade">
+                        <div class="project-image-container">
+                            <div class="project-image-gradient bg-proj-1"></div>
+                            <div class="project-ui-overlay">
+                                <div class="mock-browser">
+                                    <div class="browser-header">
+                                        <div class="browser-dots"><span></span><span></span><span></span></div>
+                                        <div class="browser-bar">paymind-it-services.netlify.app</div>
+                                    </div>
+                                    <div class="browser-content">
+                                        <div class="mock-graph">
+                                            <div class="bar-chart">
+                                                <div class="bar-col" style="height: 50%"></div>
+                                                <div class="bar-col" style="height: 85%"></div>
+                                                <div class="bar-col" style="height: 65%"></div>
+                                                <div class="bar-col" style="height: 95%"></div>
+                                                <div class="bar-col" style="height: 45%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Next.js</span>
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Tailwind CSS</span>
+                                <span class="project-tag">TypeScript</span>
+                            </div>
+                            <h3 class="project-title">PayMind-IT-services</h3>
+                            <p class="project-desc">
+                                A comprehensive financial and IT operations services application. Responsible for
+                                building and engineering the entire platform, creating reusable components, and managing
+                                deployment cycles.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                    class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-github"
+                                        style="vertical-align: middle; margin-right: 4px;">
+                                        <path
+                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                                    </svg> Code
+                                </a>
+                                <a href="https://paymind-it-services.netlify.app/main" target="_blank"
+                                    rel="noopener noreferrer" class="project-link">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project 1 -->
+                    <article class="project-card reveal-fade">
+                        <div class="project-image-container">
+                            <div class="project-image-gradient bg-proj-1"></div>
+                            <div class="project-ui-overlay">
+                                <div class="mock-browser">
+                                    <div class="browser-header">
+                                        <div class="browser-dots"><span></span><span></span><span></span></div>
+                                        <div class="browser-bar">similarity-search.ai</div>
+                                    </div>
+                                    <div class="browser-content">
+                                        <div class="mock-dashboard">
+                                            <div class="dashboard-map">
+                                                <div class="map-dot" style="top: 20%; left: 20%"></div>
+                                                <div class="map-dot" style="top: 30%; left: 70%"></div>
+                                                <div class="map-dot" style="top: 70%; left: 45%"></div>
+                                                <svg class="map-line">
+                                                    <line x1="20%" y1="20%" x2="45%" y2="70%" />
+                                                    <line x1="70%" y1="30%" x2="45%" y2="70%" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Deep Learning</span>
+                                <span class="project-tag">K-NN</span>
+                                <span class="project-tag">Vercel</span>
+                            </div>
+                            <h3 class="project-title">AI-Powered Image Similarity Search</h3>
+                            <p class="project-desc">
+                                Developed an image recommendation system using deep learning embeddings and cosine
+                                similarity. Enabled content-based visual product recommendations. Implemented
+                                vector-based K-NN search and optimized preprocessing pipelines for ~44K image datasets.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                    class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-github"
+                                        style="vertical-align: middle; margin-right: 4px;">
+                                        <path
+                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                                    </svg> Code
+                                </a>
+                                <a href="https://example.com" target="_blank" rel="noopener noreferrer"
+                                    class="project-link">
+                                    <i data-lucide="external-link"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card reveal-fade">
+                        <div class="project-image-container">
+                            <div class="project-image-gradient bg-proj-2"></div>
+                            <div class="project-ui-overlay">
+                                <div class="mock-browser">
+                                    <div class="browser-header">
+                                        <div class="browser-dots"><span></span><span></span><span></span></div>
+                                        <div class="browser-bar">placement-portal.ai</div>
+                                    </div>
+                                    <div class="browser-content">
+                                        <div class="mock-editor">
+                                            <div class="editor-lines">
+                                                <span style="width: 80%"></span>
+                                                <span style="width: 60%"></span>
+                                                <span style="width: 70%"></span>
+                                                <span style="width: 45%"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">MERN Stack</span>
+                                <span class="project-tag">OpenAI API</span>
+                                <span class="project-tag">JWT Auth</span>
+                            </div>
+                            <h3 class="project-title">AI-Powered Campus Placement Portal</h3>
+                            <p class="project-desc">
+                                Built a recruitment portal integrating MERN stack and OpenAI APIs to automate resume
+                                parsing and scoring. Developed a dynamic recruiter dashboard that empowers hiring teams
+                                to identify top candidates efficiently via AI metrics.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                    class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-github"
+                                        style="vertical-align: middle; margin-right: 4px;">
+                                        <path
+                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                                    </svg> Code
+                                </a>
+                                <a href="https://example.com" target="_blank" rel="noopener noreferrer"
+                                    class="project-link">
+                                    <i data-lucide="external-link"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 (Certificates Card) -->
+                    <article class="project-card reveal-fade">
+                        <div class="project-image-container">
+                            <div class="project-image-gradient bg-proj-3"></div>
+                            <div class="project-ui-overlay">
+                                <div class="mock-browser">
+                                    <div class="browser-header">
+                                        <div class="browser-dots"><span></span><span></span><span></span></div>
+                                        <div class="browser-bar">credentials.info</div>
+                                    </div>
+                                    <div class="browser-content">
+                                        <div class="mock-graph">
+                                            <div class="bar-chart">
+                                                <div class="bar-col" style="height: 80%"></div>
+                                                <div class="bar-col" style="height: 90%"></div>
+                                                <div class="bar-col" style="height: 75%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Data Science</span>
+                                <span class="project-tag">Full Stack</span>
+                                <span class="project-tag">DSA</span>
+                            </div>
+                            <h3 class="project-title">Credentials & Certifications</h3>
+                            <p class="project-desc">
+                                Verified certifications highlighting technical expertise:
+                                <br>• **Data Science** ~ issued by Q Academy
+                                <br>• **Full Stack Developer** ~ issued by C# Corner
+                                <br>• Active study of **DSA, DBMS, and OOP** architectures.
+                            </p>
+                            <div class="project-links">
+                                <a href="#contact" class="project-link">
+                                    <i data-lucide="mail"></i> Request Details
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section class="experience section" id="experience">
+            <div class="container">
+                <div class="section-header reveal-fade">
+                    <span class="subtitle">Timeline</span>
+                    <h2 class="section-title">Experience & Education</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item 0: Bhoomitechzone -->
+                    <div class="timeline-item reveal-fade">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">June 2026 - Present</div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="timeline-title">MERN Stack Developer</h3>
+                            <h4 class="timeline-company">Bhoomitechzone Pvt. Ltd.</h4>
+                            <p class="timeline-text">
+                                Working as a MERN Stack Developer, building production-ready web applications with
+                                Next.js, React, Node.js, Express.js, and MongoDB. Responsible for developing responsive
+                                user interfaces, integrating APIs, fixing bugs, and deploying applications.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 1: OTUSONE -->
+                    <div class="timeline-item reveal-fade">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">July 2025 - Dec 2025</div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="timeline-title">MERN Stack Developer Intern</h3>
+                            <h4 class="timeline-company">OTUSONE</h4>
+                            <p class="timeline-text">
+                                • Gained hands-on experience building and maintaining full-stack web applications using
+                                MongoDB, Express.js, React.js, and Node.js.<br>
+                                • Developed 10+ responsive UI components improving user experience and reducing load
+                                time.<br>
+                                • Worked on user authentication, CRUD operations, and deployed applications using Vercel
+                                and MongoDB Atlas.<br>
+                                • Collaborated in code reviews and followed Git-based version control practices.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2: IMSEC -->
+                    <div class="timeline-item reveal-fade">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 - 2026</div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="timeline-title">B.Tech in Computer Science</h3>
+                            <h4 class="timeline-company">IMSEC, Ghaziabad</h4>
+                            <p class="timeline-text">
+                                Focus on Software Engineering, Data Structures & Algorithms, Database Management
+                                Systems, and OOPs.
+                                <br><strong>Score:</strong> 8.1 / 10 CGPA
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3: Q Academy -->
+                    <div class="timeline-item reveal-fade">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jan 2024 - Feb 2024</div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="timeline-title">Data Science Intern</h3>
+                            <h4 class="timeline-company">Q Academy</h4>
+                            <p class="timeline-text">
+                                • Applied Python to solve real-world data analysis and cleaning problems.<br>
+                                • Analyzed and visualized datasets using Pandas, NumPy, Matplotlib, and Seaborn.<br>
+                                • Conducted exploratory analysis and data cleaning to improve quality and discover
+                                trends.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4: HRA Inter College -->
+                    <div class="timeline-item reveal-fade">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2021 - 2022</div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="timeline-title">12th Science</h3>
+                            <h4 class="timeline-company">HRA Inter College</h4>
+                            <p class="timeline-text">
+                                Complete high school certificate studies under Science stream.
+                                <br><strong>Score:</strong> 7.7 / 10
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-header reveal-fade">
+                    <span class="subtitle">Get in Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info reveal-fade">
+                        <h3 class="contact-lead">Let's build or analyze something together.</h3>
+                        <p class="contact-paragraph">
+                            Are you interested in collaborating on full-stack web applications, AI models, or data
+                            exploration? Let's connect! I will reply to you within 24 hours.
+                        </p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method-item">
+                                <div class="contact-method-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="contact-method-details">
+                                    <span class="contact-method-label">Email</span>
+                                    <a href="mailto:guptasakshi9838@gmail.com"
+                                        class="contact-method-value">guptasakshi9838@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-item">
+                                <div class="contact-method-icon">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="contact-method-details">
+                                    <span class="contact-method-label">Phone</span>
+                                    <a href="tel:+918423777203" class="contact-method-value">8423777203</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-item">
+                                <div class="contact-method-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="contact-method-details">
+                                    <span class="contact-method-label">Location</span>
+                                    <span class="contact-method-value">Ghaziabad, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container reveal-fade">
+                        <form class="contact-form glass-card" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                    <span class="input-focus-border"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="email@example.com"
+                                        required>
+                                    <span class="input-focus-border"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Collaboration Inquiry"
+                                    required>
+                                <span class="input-focus-border"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    placeholder="Tell me about your details..." required></textarea>
+                                <span class="input-focus-border"></span>
+                            </div>
+
+                            <button type="submit" class="cta-button primary-cta submit-btn" id="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <i data-lucide="send" class="btn-icon"></i>
+                            </button>
+                            <div class="form-status" id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <span class="logo-accent">&lt;</span>Sakshi Gupta<span class="logo-accent"> /&gt;</span>
+            </div>
+            <p class="footer-copyright">
+                &copy; 2026 Sakshi Gupta. Built with passion & pure HTML/CSS/JS.
+            </p>
+            <div class="footer-socials">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"
+                    style="display: inline-flex; align-items: center; justify-content: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-github">
+                        <path
+                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/sakshi-gupta-0a5736273" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn Profile"
+                    style="display: inline-flex; align-items: center; justify-content: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-linkedin">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect width="4" height="12" x="2" y="9" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Application JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
